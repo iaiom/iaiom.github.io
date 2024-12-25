@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-in-One Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #45a049;
+        }
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+        main h2 {
+            color: #4CAF50;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        main p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+        main img {
+            max-width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        .feature-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .feature-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .feature-card img {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 15px;
+        }
+        .feature-card h3 {
+            font-size: 18px;
+            margin: 0;
+            color: #333;
+        }
+        .feature-card p {
+            font-size: 14px;
+            color: #555;
+            margin: 10px 0;
+        }
+        .feature-card button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .feature-card button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 0.5rem 0;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            main {
+                padding: 1rem;
+            }
+            main h2 {
+                font-size: 1.5rem;
+            }
+            main p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                text-align: center;
+            }
+            nav ul li a {
+                padding: 0.5rem;
+                font-size: 14px;
+            }
+            .feature-card h3 {
+                font-size: 16px;
+            }
+            .feature-card p {
+                font-size: 13px;
+            }
+            .feature-card button {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>All-in-One Management System</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome!</h2>
+            <p>This unified system integrates the following features:</p>
+            <img src="img/welcome-image.jpg" alt="Welcome Image">
+        </section>
+        <section class="feature-container">
+            <div class="feature-card">
+                <img src="img/employee-management-icon.png" alt="Employee Management">
+                <h3>Employee Management</h3>
+                <p>Manage employee records, roles, and details.</p>
+                <button onclick="location.href='ems'">Go to Employee Management</button>
+            </div>
+            <div class="feature-card">
+                <img src="img/attendance-management-icon.png" alt="Attendance Management">
+                <h3>Attendance Management</h3>
+                <p>Track and manage attendance efficiently.</p>
+                <button onclick="location.href='eam'">Go to Attendance Management</button>
+            </div>
+            <div class="feature-card">
+                <img src="img/expense-management-icon.png" alt="Expense Management">
+                <h3>Expense Management</h3>
+                <p>Record and analyze organizational expenses.</p>
+                <button onclick="location.href='expense'">Go to Expense Management</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 All-in-One Management System</p>
+    </footer>
+</body>
+</html>
